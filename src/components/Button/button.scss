@@ -1,0 +1,18 @@
+.button {
+  width: 172px;
+  height: 56px;
+
+  cursor: pointer;
+
+  background-color: #ffffff;
+  border: 1px solid #7a5cfa;
+  border-radius: 8px;
+  color: #7a5cfa;
+
+  &-submit {
+    background-color: #7a5cfa;
+    border: none;
+
+    color: #ffffff;
+  }
+}

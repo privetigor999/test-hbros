@@ -1,0 +1,50 @@
+.checkboxBlock {
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 32px;
+
+  color: #666666;
+
+  &__origInput {
+    display: none;
+  }
+
+  &__input {
+    position: relative;
+
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+
+      display: block;
+
+      width: 24px;
+      height: 24px;
+
+      content: "";
+
+      transition: 0.15s ease-in-out;
+    }
+  }
+
+  &__origInput:checked + &__input::before {
+    opacity: 1;
+    background: url(./../../assets/checkbox.svg) no-repeat;
+  }
+}

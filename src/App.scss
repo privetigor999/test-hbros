@@ -1,0 +1,14 @@
+.App {
+  width: 100vw;
+  min-height: 100vh;
+
+  background: rgba(122, 92, 250, 0.2);
+
+  &__buttons {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
